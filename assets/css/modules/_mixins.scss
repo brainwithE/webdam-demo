@@ -1,26 +1,14 @@
 /* Mixins
    ========================================================================== */
 
-@mixin placeholder($color) {
-	&::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-		color: $color;
-	}
 
-	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-		color: $color;
-		opacity:  1;
-	}
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}  
+}
 
-	&::-moz-placeholder { /* Mozilla Firefox 19+ */
-		color: $color;
-		opacity:  1;
-	}
-
-	&:-ms-input-placeholder { /* Internet Explorer 10-11 */
-		color: $color;
-	}
-
-	&:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
-		color: $color;
-	}
+@include placeholder {
+    color: #ddd;
 }

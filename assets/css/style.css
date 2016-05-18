@@ -26,6 +26,26 @@
 }
 /* Mixins
    ========================================================================== */
+/* line 6, modules/_mixins.scss */
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+/* line 7, modules/_mixins.scss */
+:-moz-placeholder {
+  color: #ddd;
+}
+
+/* line 8, modules/_mixins.scss */
+::-moz-placeholder {
+  color: #ddd;
+}
+
+/* line 9, modules/_mixins.scss */
+:-ms-input-placeholder {
+  color: #ddd;
+}
+
 /* Partials
    ========================================================================== */
 /* Helpers
@@ -301,8 +321,174 @@ footer #phone label {
 
 /* Pages
    ========================================================================== */
-/* Homepage
+/* Landing Section
    ========================================================================== */
+/* line 4, pages/_landing.scss */
+#landing {
+  padding: 70px 0;
+  background: url("../img/landing.jpg") 50% 50%/cover no-repeat;
+  /* min-height: 800px; */
+}
+
+/* line 10, pages/_landing.scss */
+#landing-form {
+  background: #0078BB;
+  padding: 40px 40px 45px 40px;
+  min-height: 250px;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: -70px;
+  text-align: center;
+}
+/* line 19, pages/_landing.scss */
+#landing-form input {
+  background: #59aad0;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  color: #fefefe;
+  margin-bottom: 15px;
+}
+/* line 27, pages/_landing.scss */
+#landing-form input[type="submit"] {
+  display: block;
+  background: #ef9e31;
+  font-family: "Lato-Bold";
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 5px;
+  color: #ddd;
+}
+/* line 37, pages/_landing.scss */
+#landing-form input[type="submit"]:hover {
+  box-shadow: 2px 2px 5px #333;
+}
+
+/* line 47, pages/_landing.scss */
+.rw-wrapper {
+  width: 80%;
+  position: relative;
+  font-family: 'Bree Serif';
+  padding: 10px;
+  margin-top: 25%;
+}
+
+/* line 55, pages/_landing.scss */
+.rw-sentence {
+  margin: 0;
+  text-align: left;
+  font-size: 2.6rem;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+/* line 62, pages/_landing.scss */
+.rw-sentence span {
+  color: #444;
+  white-space: nowrap;
+  font-size: 200%;
+  font-weight: normal;
+}
+
+/* line 69, pages/_landing.scss */
+.rw-words {
+  display: inline;
+  text-indent: 10px;
+}
+
+/* line 74, pages/_landing.scss */
+.rw-words span {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  color: #6b969d;
+}
+
+/* line 82, pages/_landing.scss */
+.rw-words-1 span {
+  animation: rotateWordsFirst 18s linear infinite 0s;
+}
+
+/* line 85, pages/_landing.scss */
+.rw-words-2 span {
+  animation: rotateWordsSecond 18s linear infinite 0s;
+}
+
+/* line 88, pages/_landing.scss */
+.rw-words span:nth-child(2) {
+  animation-delay: 3s;
+  color: #6b889d;
+}
+
+/* line 92, pages/_landing.scss */
+.rw-words span:nth-child(3) {
+  animation-delay: 6s;
+  color: #6b739d;
+}
+
+/* line 96, pages/_landing.scss */
+.rw-words span:nth-child(4) {
+  animation-delay: 9s;
+  color: #7a6b9d;
+}
+
+/* line 100, pages/_landing.scss */
+.rw-words span:nth-child(5) {
+  animation-delay: 12s;
+  color: #8d6b9d;
+}
+
+/* line 104, pages/_landing.scss */
+.rw-words span:nth-child(6) {
+  animation-delay: 15s;
+  color: #9b6b9d;
+}
+
+@keyframes rotateWordsFirst {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    height: 0px;
+  }
+  8% {
+    opacity: 1;
+    height: 60px;
+  }
+  19% {
+    opacity: 1;
+    height: 60px;
+  }
+  25% {
+    opacity: 0;
+    height: 60px;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes rotateWordsSecond {
+  0% {
+    opacity: 1;
+    animation-timing-function: ease-in;
+    width: 0px;
+  }
+  10% {
+    opacity: 0.3;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 100%;
+  }
+  27% {
+    opacity: 0;
+    width: 100%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /* Review Section
    ========================================================================== */
 /* line 3, pages/_review.scss */
