@@ -30,13 +30,14 @@
     src: url(../fonts/Slot-Regular.otf);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
-}
-
-body {
-	padding-top: 80px;
 }
 
 html {

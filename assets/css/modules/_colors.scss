@@ -6,7 +6,7 @@
 $light-orange: #f4bf38;
 $orange: #ef9e31;
 $dark-orange: #e27a2b;
-$blue: #235977;
+$blue: #0078BB;
 $white: #fefefe;
 $black: #2a2a2b;
 
@@ -21,7 +21,33 @@ $black: #2a2a2b;
     src: url(../../fonts/Slot-Regular.otf);
 }
 
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: Lato-BoldItalic;
+    src: url(../fonts/Lato-BoldItalic.ttf);
+}
+
 $font-slot: 'Slot-Regular'; // 300, 700
 $font-proxima-alternative: 'Neue Helvetica W01', helvetica, sans-serif; // 400, 400 italic
 $font-newsgothic: 'Neue Helvetica W01', helvetica, sans-serif; // 700
+
+$lato-reg: 'Lato-Regular';
+$lato-bold: 'Lato-Bold';
+$lato-light: 'Lato-Light';
+$lato-bolditc: 'Lato-BoldItalic';
+$fontawesome: 'FontAwesome'; // 300, 700
 //-- typo:end --//
