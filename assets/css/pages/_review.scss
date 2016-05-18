@@ -15,6 +15,7 @@
 .img-wrap{
 	position: relative;
 
+
 	.img-container{
 		border:5px solid #ddd;
 		border-radius: 100%;
@@ -34,8 +35,10 @@
 	    height: 0;
 	    border-left: 40px solid transparent;
 	    border-right: 40px solid transparent;
-	    border-top: 30px solid #ddd;
-	    margin: -15px auto 10px;
+	    border-top: 40px solid #ddd;
+    	margin: -20px auto 10px;
+    	transition: all ease 0.5s;
+
 	}
 
 	.logo{
@@ -53,6 +56,13 @@
 	    	max-width: 70px;    	
 	    }
 	}
+
+	&:hover{
+    	#arrow{
+    		margin-top:-15px;
+    		transition: all ease 0.5s;
+    	}
+    }
 
 }
 
