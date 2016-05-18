@@ -1,0 +1,25 @@
+/* Footer
+   ========================================================================== */
+
+footer{
+	background-color: #f7f7f7;
+	position: relative;
+
+	.details{
+		padding: 50px 0;
+	}
+
+	.copyright{
+		padding-top: 15px;
+		background: url('../img/bg_dotted.png') repeat-x left top;
+	}
+
+	#phone {
+		padding: 0;
+
+		label{
+			color: #1f1f1f;
+			font-size: 1.4rem;
+		}
+	}
+}

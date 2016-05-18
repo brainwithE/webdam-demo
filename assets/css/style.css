@@ -214,6 +214,14 @@ label {
   font-size: 1.4rem;
 }
 
+/* Defaults
+   ========================================================================== */
+/* line 104, partials/_typography.scss */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 /* Header
    ========================================================================== */
 /* line 4, partials/_header.scss */
@@ -250,6 +258,32 @@ header {
   font-family: "FontAwesome";
   content: '\f10b';
   margin-right: 10px;
+}
+
+/* Footer
+   ========================================================================== */
+/* line 4, partials/_footer.scss */
+footer {
+  background-color: #f7f7f7;
+  position: relative;
+}
+/* line 8, partials/_footer.scss */
+footer .details {
+  padding: 50px 0;
+}
+/* line 12, partials/_footer.scss */
+footer .copyright {
+  padding-top: 15px;
+  background: url("../img/bg_dotted.png") repeat-x left top;
+}
+/* line 17, partials/_footer.scss */
+footer #phone {
+  padding: 0;
+}
+/* line 20, partials/_footer.scss */
+footer #phone label {
+  color: #1f1f1f;
+  font-size: 1.4rem;
 }
 
 /* Pages
