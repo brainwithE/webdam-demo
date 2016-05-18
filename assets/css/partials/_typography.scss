@@ -98,10 +98,21 @@ label {
 	font-size: 1.4rem;
 }
 
+section {
+	padding: 40px 0;
+}
+
 /* Defaults
    ========================================================================== */
 
 #wrapper {
 	min-height: 100%;
 	position: relative;
+}
+
+.dotted-border{
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	background: url('../img/bg_dotted.png') repeat-x left bottom;
 }

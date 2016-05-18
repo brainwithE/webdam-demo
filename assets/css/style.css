@@ -214,12 +214,25 @@ label {
   font-size: 1.4rem;
 }
 
+/* line 101, partials/_typography.scss */
+section {
+  padding: 40px 0;
+}
+
 /* Defaults
    ========================================================================== */
-/* line 104, partials/_typography.scss */
+/* line 108, partials/_typography.scss */
 #wrapper {
   min-height: 100%;
   position: relative;
+}
+
+/* line 113, partials/_typography.scss */
+.dotted-border {
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background: url("../img/bg_dotted.png") repeat-x left bottom;
 }
 
 /* Header
@@ -290,5 +303,84 @@ footer #phone label {
    ========================================================================== */
 /* Homepage
    ========================================================================== */
+/* Review Section
+   ========================================================================== */
+/* line 3, pages/_review.scss */
+.review-panel {
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+/* line 8, pages/_review.scss */
+.review-panel p {
+  font-size: 2rem;
+}
+/* line 10, pages/_review.scss */
+.review-panel p span {
+  font-weight: bold;
+}
+
+/* line 15, pages/_review.scss */
+.img-wrap {
+  position: relative;
+}
+/* line 18, pages/_review.scss */
+.img-wrap .img-container {
+  border: 5px solid #ddd;
+  border-radius: 100%;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 26, pages/_review.scss */
+.img-wrap .img-container image {
+  width: 100%;
+}
+/* line 32, pages/_review.scss */
+.img-wrap #arrow {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #ddd;
+  margin: -15px auto 10px;
+}
+/* line 41, pages/_review.scss */
+.img-wrap .logo {
+  position: absolute;
+  top: 55%;
+  right: 15%;
+  max-width: 80px;
+  width: 80px;
+  max-height: 80px;
+  background: #0078BB;
+  border-radius: 3px;
+  padding: 10px;
+}
+/* line 52, pages/_review.scss */
+.img-wrap .logo img {
+  max-width: 70px;
+}
+
+/* line 59, pages/_review.scss */
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 3rem;
+}
+/* line 64, pages/_review.scss */
+.rating span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+/* line 70, pages/_review.scss */
+.rating span:hover:before, .rating span:hover ~ :before {
+  content: "\2605";
+  position: absolute;
+  cursor: pointer;
+}
+
 /* Third-party
    ========================================================================== */

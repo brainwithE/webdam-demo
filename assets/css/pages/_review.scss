@@ -1,0 +1,77 @@
+/* Review Section
+   ========================================================================== */
+.review-panel{
+	text-align: center;
+	padding-left: 45px;
+	padding-right: 45px;
+
+	p{
+		font-size: 2rem;
+		span{
+			font-weight: bold;
+		}
+	}
+}
+.img-wrap{
+	position: relative;
+
+	.img-container{
+		border:5px solid #ddd;
+		border-radius: 100%;
+		width: 100%;
+		max-width: 200px;
+		overflow: hidden;
+		display: inline-block;
+
+		image{
+			width: 100%;
+		}
+
+	}
+
+	#arrow {
+		width: 0;
+	    height: 0;
+	    border-left: 40px solid transparent;
+	    border-right: 40px solid transparent;
+	    border-top: 30px solid #ddd;
+	    margin: -15px auto 10px;
+	}
+
+	.logo{
+		position: absolute;
+	    top: 55%;
+	    right: 15%;
+	    max-width: 80px;
+	    width: 80px;
+	    max-height: 80px;
+	    background: $blue;
+	    border-radius: 3px;
+	    padding: 10px;
+
+	    img{
+	    	max-width: 70px;    	
+	    }
+	}
+
+}
+
+.rating{
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-size: 3rem;
+
+	span{
+		display: inline-block;
+		position: relative;
+		width: 1.1em;
+
+		&:hover {
+			&:before, ~:before {
+				content: "\2605";
+   				position: absolute;
+   				cursor: pointer;
+			}
+		}
+	}
+}
