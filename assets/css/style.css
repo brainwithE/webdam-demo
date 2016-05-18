@@ -326,6 +326,7 @@ footer #phone label {
 }
 /* line 19, pages/_review.scss */
 .img-wrap .img-container {
+  position: relative;
   border: 5px solid #ddd;
   border-radius: 100%;
   width: 100%;
@@ -333,11 +334,11 @@ footer #phone label {
   overflow: hidden;
   display: inline-block;
 }
-/* line 27, pages/_review.scss */
+/* line 29, pages/_review.scss */
 .img-wrap .img-container image {
   width: 100%;
 }
-/* line 33, pages/_review.scss */
+/* line 35, pages/_review.scss */
 .img-wrap #arrow {
   width: 0;
   height: 0;
@@ -347,11 +348,11 @@ footer #phone label {
   margin: -20px auto 10px;
   transition: all ease 0.5s;
 }
-/* line 44, pages/_review.scss */
+/* line 46, pages/_review.scss */
 .img-wrap .logo {
   position: absolute;
-  top: 55%;
-  right: 15%;
+  top: 53%;
+  right: 10px;
   max-width: 80px;
   width: 80px;
   max-height: 80px;
@@ -359,29 +360,29 @@ footer #phone label {
   border-radius: 3px;
   padding: 10px;
 }
-/* line 55, pages/_review.scss */
+/* line 57, pages/_review.scss */
 .img-wrap .logo img {
   max-width: 70px;
 }
-/* line 61, pages/_review.scss */
+/* line 63, pages/_review.scss */
 .img-wrap:hover #arrow {
   margin-top: -15px;
   transition: all ease 0.5s;
 }
 
-/* line 69, pages/_review.scss */
+/* line 71, pages/_review.scss */
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
   font-size: 3rem;
 }
-/* line 74, pages/_review.scss */
+/* line 76, pages/_review.scss */
 .rating span {
   display: inline-block;
   position: relative;
   width: 1.1em;
 }
-/* line 80, pages/_review.scss */
+/* line 82, pages/_review.scss */
 .rating span:hover:before, .rating span:hover ~ :before {
   content: "\2605";
   position: absolute;
