@@ -127,6 +127,47 @@
 				</div>
 			</section> <!-- end of features section -->
 
+			<section id="slider-container">
+				<div class="regular slider">
+			    <div>
+					<img src="http://placehold.it/350x300?text=1">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=2">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=3">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=4">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=5">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=6">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=6">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=5">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=4">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=3">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=2">
+			    </div>
+			    <div>
+					<img src="http://placehold.it/350x300?text=1">
+			    </div>
+			    </div>
+		  </section>
+
 			<section>
 				<div class="container _text-center">
 					<h1><span class="dotted-border">Don’t Take Our Word For It...</span></h1>
@@ -201,6 +242,17 @@
 		<!--*************************************************-->
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/slick.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).on('ready', function() {
+			  $(".regular").slick({
+			    dots: true,
+			    infinite: true,
+			    slidesToShow: 6,
+			    slidesToScroll: 6
+			  });			  
+			});
+		</script>
 
 
 	</body>
