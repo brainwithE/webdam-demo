@@ -18,12 +18,12 @@
 
 	.img-container{
 		position: relative;
-		border:5px solid #ddd;
-		border-radius: 100%;
+		border:5px solid #ddd;		
 		width: 100%;
 		max-width: 200px;
 		overflow: hidden;
 		display: inline-block;
+		@include border-radius(100%);
 
 
 		image{
@@ -51,8 +51,8 @@
 	    width: 80px;
 	    max-height: 80px;
 	    background: $blue;
-	    border-radius: 3px;
 	    padding: 10px;
+	    @include border-radius(3px);
 
 	    img{
 	    	max-width: 70px;    	
