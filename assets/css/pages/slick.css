@@ -1,27 +1,26 @@
-/* Slider Section
-   ========================================================================== */
-/* line 3, slick.scss */
+/* Slider */
+/* line 2, slick.scss */
 #slider-container {
   background: #f7f7f7;
 }
 
-/* line 7, slick.scss */
+/* line 6, slick.scss */
 .slider {
   width: 90%;
   margin: 30px auto;
 }
 
-/* line 12, slick.scss */
+/* line 11, slick.scss */
 .slick-slide {
   margin: 0px 20px;
 }
 
-/* line 16, slick.scss */
+/* line 15, slick.scss */
 .slick-slide img {
   width: 100%;
 }
 
-/* line 20, slick.scss */
+/* line 19, slick.scss */
 .slick-prev:before,
 .slick-next:before {
   color: black !important;
